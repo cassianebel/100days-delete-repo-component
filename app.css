@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-primary: rgb(129, 94, 255);
+    font-family: sans-serif;
+    background-color: rgb(45, 51, 57);
+}
+
+nav, .repos {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 3rem auto;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user .img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 3px solid #ccc;
+    margin-right: 1rem;
+}
+
+.user .info-group p:first-of-type {
+    font-weight: 800;
+}
+
+.user .info-group p:last-of-type {
+    color: var(--color-primary);
+    font-weight: 300;
+}
+
+nav button {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: .25rem;
+    border: none;
+    padding: .5rem 1rem;
+}
+
+
+.repos {
+    display: flex;
+    justify-content: centedr;
+    align-items: start;
+    width: 100%;
+    max-width: 75%;
+    gap: 1rem;
+
+}
+
+.repos .repo {
+    width: 33%;
+    background-color: #eee;
+    border-radius: .5rem;
+    color: #565656;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.repo .img {
+    height: 100px;
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+    background-color: rgb(206, 211, 215);
+}
+
+.repo .info {
+    background-color: white;
+    border-radius: 0 0 .5rem .5rem;
+    padding: 1rem;
+}
+
+.info .title {
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.repo form {
+    display: none;
+    padding: 1rem .5rem .25rem;
+    margin-top: 1rem;
+}
+
+.repo form input {
+    width: 100%;
+    padding: 1rem;
+    margin: .25rem auto;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.repo form button {
+    background-color: rgb(138, 48, 48);
+    border: 3px solid rgb(236, 86, 86);
+    color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.repo form p {
+    color: red;
+    font-size: .8rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+
+.repo:hover form {
+    display: block;
+}
+
+.repo:hover {
+    padding: .25rem;
+}
