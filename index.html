@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./app.css" />
     <title>Delete Repo Component</title>
   </head>
-
+  <body>
   <nav>
     <div class="user">
       <div class="img"></div>
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <button>Create New</button>
+    <button id="create-new">Create New</button>
   </nav>
 
   <div class="repos">
@@ -30,7 +30,7 @@
           laborum?
         </p>
       </div>
-      <form>
+      <form class="delete-form">
         <label>Type the repo name to delete</label>
         <p>You must match the repository name</p>
         <input type="text" />
@@ -47,7 +47,7 @@
           laborum?
         </p>
       </div>
-      <form>
+      <form class="delete-form">
         <label>Type the repo name to delete</label>
         <p>You must match the repository name</p>
         <input type="text" />
@@ -64,7 +64,7 @@
           laborum?
         </p>
       </div>
-      <form>
+      <form class="delete-form">
         <label>Type the repo name to delete</label>
         <p>You must match the repository name</p>
         <input type="text" />
@@ -72,6 +72,20 @@
       </form>
     </div>
   </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <button id="close-modal">x</button>
+      <h2>Create a New Repository</h2>
+      <form id="new-repo-form">
+        <label for="repo-name">Repository Name</label>
+        <input type="text" id="repo-name" name="repo-name">
+        <label for="repo-desc">Description</label>
+        <textarea id="repo-desc" name="repo-desc"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
   <script src="./app.js"></script>
-  <body></body>
+  </body>
 </html>

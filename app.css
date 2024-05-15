@@ -56,6 +56,7 @@ nav button {
     border-radius: .25rem;
     border: none;
     padding: .5rem 1rem;
+    cursor: pointer;
 }
 
 
@@ -136,4 +137,72 @@ nav button {
 
 .repo:hover {
     padding: .25rem;
+}
+
+/* Create New Repository Modal */
+.modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #00000085;
+}
+
+.modal-overlay.active {
+  display: block;
+}
+
+.modal {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: .5rem;
+  background: #eee;
+  color: #565656;
+}
+
+#close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #565656;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal h2 {
+  margin-bottom: 2rem;
+}
+
+.modal label {
+  display: block;
+  margin: 20px 0 5px 0;
+}
+
+.modal input,
+.modal textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: .25rem auto;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  outline: none;
+}
+
+#submit {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: .25rem;
+  border: none;
+  padding: .5rem 1rem;
+  margin-top: 20px;
+  cursor: pointer;
 }
